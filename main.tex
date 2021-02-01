@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt]{article}
+\documentclass[a4paper,11pt,twocolumn]{article}
 
 %% Useful packages
 \usepackage{graphicx} % for including figures
@@ -65,24 +65,22 @@
 % End of preamble
 
 \begin{document}
-	
-	%%%% Title Page with document information
-\begin{titlepage}
+
+% Document title and author info
+\twocolumn[{
 \begin{center}
-	{\LARGE Organisation or Publication}\\[0.2cm]
-	{\Large Some More Publisher Information}\\[1cm]
 	{ \huge \bfseries Document title}\\[0.3cm]
-	{ \large Document Subtitle}\\[0.7cm]
 	\emph{Authors:}\\
 	Myself\\
 	A. N. Other\\[1.5cm]
 \end{center}
-\vfill
-\section*{Abstract}
-\lipsum[1]
-\end{titlepage}
-\twocolumn
-\section{Introduction}	
+}]
+% Mainmatter starts here
+\textbf{
+	\lipsum[1]
+}
+
+\section{Introduction}
 \lipsum
 \subsection{Stuff}
 \lipsum
