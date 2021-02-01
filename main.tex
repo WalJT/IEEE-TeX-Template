@@ -5,12 +5,24 @@
 \usepackage{pdfpages} % for importing pdf files
 \usepackage[UKenglish]{isodate}% use european date format
 \usepackage{lipsum} % generates filler text for this template
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set up section heading format
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\bfseries\centering}
+{\thesection.}{0.5em}{}
+
+\titleformat{\subsection}
+{\normalfont\itshape}
+{\thesubsection.}{0.5em}{}
 
 % Create Navigation bookmarks, make contents page clickable
-\usepackage{hyperref}
-\hypersetup{
-    hidelinks=true
-}
+%\usepackage{hyperref}
+%\hypersetup{
+%    hidelinks=true
+%}
 
 % Use a margin width suitable for twocolumn format
 \usepackage[margin=1.45cm]{geometry}
