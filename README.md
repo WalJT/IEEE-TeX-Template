@@ -1,2 +1,2 @@
 # IEEE-TeX-Template
-My primary document template
+A document tepmlate in the format of an IEEE Xplore journal article
