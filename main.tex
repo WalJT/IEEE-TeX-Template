@@ -6,6 +6,9 @@
 \usepackage[UKenglish]{isodate}% use european date format
 \usepackage{lipsum} % generates filler text for this template
 
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{sources.bib}
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 
@@ -87,7 +90,9 @@
 
 
 \section{Introduction}
-\lipsum
+\lipsum\cite{lunduke_half_2018}
 \subsection{Stuff}
 \lipsum
+
+\printbibliography
 \end{document}
