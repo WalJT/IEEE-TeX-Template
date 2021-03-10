@@ -27,9 +27,15 @@
 \renewcommand{\thesection}{\Roman{section}}
 \renewcommand{\thesubsection}{\Alph{subsection}}
 
-% Create Navigation bookmarks, make contents page clickable
+% Create Navigation bookmarks, make contents page clickable, and add metadata
 \usepackage{hyperref}
-\hypersetup{hidelinks}
+\hypersetup{
+        pdfauthor={Your Name},
+    	pdftitle={The Title},
+    	pdfsubject={The Subject},
+    	pdfkeywords={Some Keywords},
+        hidelinks
+}
 
 % Use a margin width suitable for twocolumn format
 \usepackage[margin=1.45cm]{geometry}
