@@ -30,7 +30,7 @@
 
 \titleformat{\subsection}
 {\normalfont\itshape}
-{}{0em}{}
+{\thesubsection.}{0.5em}{}
 
 \renewcommand{\thesection}{\Roman{section}}
 \renewcommand{\thesubsection}{\Alph{subsection}}
@@ -98,6 +98,7 @@
 	A. N. Other\\[0.5cm]
 	\today\\[1.5cm]
 \end{center}
+\tableofcontents
 
 % Mainmatter starts here
 
@@ -113,8 +114,7 @@
 \subsection{Stuff}
 \lipsum
 
-\printbibliography
-
 \end{multicols}
+\printbibliography
 
 \end{document}
