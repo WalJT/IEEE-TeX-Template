@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt,twocolumn]{article}
+\documentclass[a4paper,10pt]{article}
 
 %% Useful packages
 \usepackage{graphicx} % for including figures
@@ -19,6 +19,8 @@
 
 \usepackage{amsmath}
 \usepackage{amsfonts}
+
+\usepackage{multicol}
 
 % Set up section heading format
 \usepackage{titlesec}
@@ -89,7 +91,6 @@
 \begin{document}
 
 % Document title and author info
-\twocolumn[{
 \begin{center}
 	{ \huge \bfseries Document Title}\\[0.3cm]
 	\emph{Authors:}\\
@@ -97,8 +98,11 @@
 	A. N. Other\\[0.5cm]
 	\today\\[1.5cm]
 \end{center}
-}]
+
 % Mainmatter starts here
+
+\begin{multicols}{2}
+
 \textit{\textbf{Abstract -- }}\lipsum[1]
 \\[0.5cm]
 \textit{\textbf{Keywords --} Junk, Space}
@@ -110,4 +114,7 @@
 \lipsum
 
 \printbibliography
+
+\end{multicols}
+
 \end{document}
