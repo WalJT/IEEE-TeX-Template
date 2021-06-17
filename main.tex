@@ -30,7 +30,7 @@
 
 \titleformat{\subsection}
 {\normalfont\itshape}
-{\thesubsection.}{0.5em}{}
+{}{0em}{}
 
 \renewcommand{\thesection}{\Roman{section}}
 \renewcommand{\thesubsection}{\Alph{subsection}}
@@ -99,11 +99,9 @@
 	\today\\[1.5cm]
 \end{center}
 \tableofcontents
-
+\hrulefill
 % Mainmatter starts here
-
 \begin{multicols}{2}
-
 \textit{\textbf{Abstract -- }}\lipsum[1]
 \\[0.5cm]
 \textit{\textbf{Keywords --} Junk, Space}
@@ -111,7 +109,7 @@
 
 \section{Introduction}
 \lipsum\cite{lunduke_half_2018}
-\subsection{Stuff}
+\subsection{Stuff that makes stuff do stuff}
 \lipsum
 
 \end{multicols}
